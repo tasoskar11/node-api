@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0"
+    },
+    "host": "localhost:5001",
+    "basePath": "/pc-se/film",
+    "schemes": ["http"],
+    "produces": ["application/json"],
+    "paths": {
+      "/{title}": {
+        "get": {
+          "tags": ["Find Trailer for Title"],
+          "summary": "Search by viaplay film title codes using the moviedb api",
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "404": {
+              "description": "Trailer for given Title not found. Either imdb id was not found for given trailer or no video found for the respective imdb."
+            }
+          },
+          "content": {
+            "application/json": {}
+          },
+          "parameters": [
+            {
+                "name": "title",
+                "in": "path",
+                "description": "the title code from the viaplay db",
+                "required": true,
+                "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  }
