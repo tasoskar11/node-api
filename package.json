@@ -12,6 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-prom-bundle": "^5.1.4",
+    "node-fetch": "^2.3.0",
+    "prom-client": "^11.3.0"
   }
 }
