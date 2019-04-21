@@ -1,6 +1,6 @@
 # Node.js REST API for providing film trailer URLs
 
-The API should take a movie resource link (e.g. <https://content.viaplay.se/pc-se/film/arrival-2016)> as input and based on that return the URL to the trailer for that movie.
+The API should take a movie resource link e.g. <https://content.viaplay.se/pc-se/film/para-knas-2017> as input and based on that return the URL to the trailer for that movie.
 
 ## Prerequisites
 

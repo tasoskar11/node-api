@@ -8,7 +8,6 @@ chai.should()
 const expect = chai.expect
 
 describe('The trailer api /', () => {
-  // Test to get all students record
   it('should return 404 for unknown routes.', (done) => {
     chai.request(app)
       .get('/')
