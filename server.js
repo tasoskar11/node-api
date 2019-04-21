@@ -17,9 +17,9 @@ const server = http.createServer(app)
 
 
 if(!module.parent) { // just start listening when you are not running under test.
-	server.listen(port, () =>
-		console.log(`Running at http://localhost:${port}...`)
-	)
+  server.listen(port, () =>
+    console.log(`Running at http://localhost:${port}...`)
+  )
 }
 
 module.exports = server // exposed for testing

@@ -6,6 +6,8 @@
     },
     "extends": "eslint:recommended",
     "globals": {
+        "describe": "readonly",
+        "it": "readonly",
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
@@ -13,10 +15,8 @@
         "ecmaVersion": 2018
     },
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
+        "indent": ["error", 2],
+        "no-console": "off",
         "linebreak-style": [
             "error",
             "unix"
