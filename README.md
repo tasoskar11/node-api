@@ -21,3 +21,15 @@ API_KEY=<api_key_value>
 ## Running the tests
 
 ```npm test```
+
+## Use the API
+
+You can use the api just by appending the title like that:
+<http://localhost:5001/pc-se/film/para-knas-2017>
+The documentation of the endpoint should be available at <http://localhost:5001/api-docs>
+
+## Monitoring and health
+
+An endpoint for prometheus format metrics is exposed under <http://localhost:5001/metrics>. No custom metrics implemented. It should be enough for the basics.
+
+A health endpoint is exposed under <http://localhost:5001/health>
